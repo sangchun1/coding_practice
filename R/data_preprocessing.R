@@ -35,7 +35,7 @@ apt_price$apt_nm <- gsub("\\(.*", "", apt_price$apt_nm) # 괄호 이후 삭제
 head(apt_price$apt_nm, 30)
 loc <- read.csv("sigun_code.csv", fileEncoding = 'UTF-8') # 지역 코드 불러오기
 apt_price <- merge(apt_price, loc, by = 'code') # 지역명 결합하기
-apt_price$juso_jibun <- paste0(apt_price$addr_2, apt_price$dong, " ", apt_price$jibun, " ", apt_price$apt_nm) # 주소 조합
+apt_price$juso_jibun <- paste0(apt_price$addr_2, " ", apt_price$dong, " ", apt_price$jibun, " ", apt_price$apt_nm) # 주소 조합
 head(apt_price, 2) # 자료 확인
 
 # 2-4 건축 연도, 면적 변환하기
