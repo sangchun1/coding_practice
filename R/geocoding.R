@@ -11,7 +11,7 @@ head(apt_juso, 2) # 추출 결과 확인
 # 2-1 지오 코딩하기
 add_list <- list() # 빈 리스트 생성
 cnt <- 0 # 반복문 카운팅 초기값 설정
-kakao_key = "547d299f96ee6f8e5136bad6bbbbbda8"
+kakao_key = "#---#"
 # 라이브러리 불러오기
 library(httr)
 library(RJSONIO)
