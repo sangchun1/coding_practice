@@ -50,4 +50,4 @@ juso_geocoding$coord_y <- as.numeric(juso_geocoding$coord_y)
 juso_geocoding <- na.omit(juso_geocoding) # 결측치 제거
 dir.create("./05_geocoding") # 새로운 폴더 생성
 save(juso_geocoding, file = "./05_geocoding/05_juso_geocoding.rdata") # 저장
-write.csv(juso_geocoding, "./05_geocoding/05_juso_geocoding.rdata.csv")
+write.csv(juso_geocoding, "./05_geocoding/05_juso_geocoding.csv")
