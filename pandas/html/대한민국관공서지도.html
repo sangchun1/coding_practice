@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b3ea146d00ae1a0515a3ebb6d7d76659 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    <h3 align="center" style="font-size:20px">대한민국 관공서 지도</h3>
+    
+            <div class="folium-map" id="map_b3ea146d00ae1a0515a3ebb6d7d76659" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b3ea146d00ae1a0515a3ebb6d7d76659 = L.map(
+                "map_b3ea146d00ae1a0515a3ebb6d7d76659",
+                {
+                    center: [37.5502, 126.982],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_46c7db712cc17a29850c33f06cd33310 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b3ea146d00ae1a0515a3ebb6d7d76659);
+        
+    
+            var circle_marker_4112ec592dcba14ae44ee23e13393818 = L.circleMarker(
+                [37.5735051436739, 126.978988255925],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_b3ea146d00ae1a0515a3ebb6d7d76659);
+        
+    
+        var popup_f7b98ad5a2accafb13a5d85ddbe84d35 = L.popup({"maxWidth": 200});
+
+        
+            var html_9632759507b71f32a6e61a9c537c1948 = $(`<div id="html_9632759507b71f32a6e61a9c537c1948" style="width: 100.0%; height: 100.0%;">서울특별시 종로구 종로1길 36(수송동)</div>`)[0];
+            popup_f7b98ad5a2accafb13a5d85ddbe84d35.setContent(html_9632759507b71f32a6e61a9c537c1948);
+        
+
+        circle_marker_4112ec592dcba14ae44ee23e13393818.bindPopup(popup_f7b98ad5a2accafb13a5d85ddbe84d35)
+        ;
+
+        
+    
+    
+            circle_marker_4112ec592dcba14ae44ee23e13393818.bindTooltip(
+                `<div>
+                     종로구청
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_08cef22ab9a4244d26125a478fe3f5a0 = L.circleMarker(
+                [37.6545190418039, 127.056297212439],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_b3ea146d00ae1a0515a3ebb6d7d76659);
+        
+    
+        var popup_754e2a887f58f040392f1c23a5efe333 = L.popup({"maxWidth": 200});
+
+        
+            var html_903317e97f8f63ab71d9189d3a7dba9a = $(`<div id="html_903317e97f8f63ab71d9189d3a7dba9a" style="width: 100.0%; height: 100.0%;">서울특별시 노원구 노해로 437(상계동)</div>`)[0];
+            popup_754e2a887f58f040392f1c23a5efe333.setContent(html_903317e97f8f63ab71d9189d3a7dba9a);
+        
+
+        circle_marker_08cef22ab9a4244d26125a478fe3f5a0.bindPopup(popup_754e2a887f58f040392f1c23a5efe333)
+        ;
+
+        
+    
+    
+            circle_marker_08cef22ab9a4244d26125a478fe3f5a0.bindTooltip(
+                `<div>
+                     노원구청
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1f6841996e984876b692a435cb3f2703 = L.circleMarker(
+                [37.514477182474, 127.105859984389],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_b3ea146d00ae1a0515a3ebb6d7d76659);
+        
+    
+        var popup_1fd1e14704d3b0463358130344eeff8d = L.popup({"maxWidth": 200});
+
+        
+            var html_66b12e54512dde2b627634da69ef47b3 = $(`<div id="html_66b12e54512dde2b627634da69ef47b3" style="width: 100.0%; height: 100.0%;">서울특별시 송파구 올림픽로 326(신천동)</div>`)[0];
+            popup_1fd1e14704d3b0463358130344eeff8d.setContent(html_66b12e54512dde2b627634da69ef47b3);
+        
+
+        circle_marker_1f6841996e984876b692a435cb3f2703.bindPopup(popup_1fd1e14704d3b0463358130344eeff8d)
+        ;
+
+        
+    
+    
+            circle_marker_1f6841996e984876b692a435cb3f2703.bindTooltip(
+                `<div>
+                     송파구청
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_957bb762d81d837733ba946700394353 = L.circleMarker(
+                [37.5634263131969, 126.903356973848],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_b3ea146d00ae1a0515a3ebb6d7d76659);
+        
+    
+        var popup_70de5b231100e56d844177b558ada417 = L.popup({"maxWidth": 200});
+
+        
+            var html_9ac7b87b0af988132556b34645ce447b = $(`<div id="html_9ac7b87b0af988132556b34645ce447b" style="width: 100.0%; height: 100.0%;">서울특별시 마포구 월드컵로 지하190(성산동)</div>`)[0];
+            popup_70de5b231100e56d844177b558ada417.setContent(html_9ac7b87b0af988132556b34645ce447b);
+        
+
+        circle_marker_957bb762d81d837733ba946700394353.bindPopup(popup_70de5b231100e56d844177b558ada417)
+        ;
+
+        
+    
+    
+            circle_marker_957bb762d81d837733ba946700394353.bindTooltip(
+                `<div>
+                     마포구청
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_add12792e7a30ab419ad47386e7b07ae = L.circleMarker(
+                [37.5170753784215, 126.866542541936],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_b3ea146d00ae1a0515a3ebb6d7d76659);
+        
+    
+        var popup_7dc695cb4b109cdd6716ae5d428abddf = L.popup({"maxWidth": 200});
+
+        
+            var html_e03d501bd0f30ad7c3fd0cd840f51cfb = $(`<div id="html_e03d501bd0f30ad7c3fd0cd840f51cfb" style="width: 100.0%; height: 100.0%;">서울특별시 양천구 목동동로 105(신정동)</div>`)[0];
+            popup_7dc695cb4b109cdd6716ae5d428abddf.setContent(html_e03d501bd0f30ad7c3fd0cd840f51cfb);
+        
+
+        circle_marker_add12792e7a30ab419ad47386e7b07ae.bindPopup(popup_7dc695cb4b109cdd6716ae5d428abddf)
+        ;
+
+        
+    
+    
+            circle_marker_add12792e7a30ab419ad47386e7b07ae.bindTooltip(
+                `<div>
+                     양천구청
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6dc6697d52a0f8725d38155c1ce02ce8 = L.circleMarker(
+                [37.6687161285201, 127.047131400119],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_b3ea146d00ae1a0515a3ebb6d7d76659);
+        
+    
+        var popup_736c0c38fc5f2a9955449496554d6fe3 = L.popup({"maxWidth": 200});
+
+        
+            var html_3e2ab385ee64a60780069f0970e41609 = $(`<div id="html_3e2ab385ee64a60780069f0970e41609" style="width: 100.0%; height: 100.0%;">서울특별시 도봉구 마들로 656(방학동)</div>`)[0];
+            popup_736c0c38fc5f2a9955449496554d6fe3.setContent(html_3e2ab385ee64a60780069f0970e41609);
+        
+
+        circle_marker_6dc6697d52a0f8725d38155c1ce02ce8.bindPopup(popup_736c0c38fc5f2a9955449496554d6fe3)
+        ;
+
+        
+    
+    
+            circle_marker_6dc6697d52a0f8725d38155c1ce02ce8.bindTooltip(
+                `<div>
+                     도봉구청
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7174feed71e17b6387846c6107418274 = L.circleMarker(
+                [37.409493814977, 126.678337878586],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_b3ea146d00ae1a0515a3ebb6d7d76659);
+        
+    
+        var popup_6a2fa4c7a43f434b7ef468bad7f8435f = L.popup({"maxWidth": 200});
+
+        
+            var html_17469bcaf7e1835b4c1ff66c21de092e = $(`<div id="html_17469bcaf7e1835b4c1ff66c21de092e" style="width: 100.0%; height: 100.0%;">인천광역시 연수구 원인재로 115(동춘동)</div>`)[0];
+            popup_6a2fa4c7a43f434b7ef468bad7f8435f.setContent(html_17469bcaf7e1835b4c1ff66c21de092e);
+        
+
+        circle_marker_7174feed71e17b6387846c6107418274.bindPopup(popup_6a2fa4c7a43f434b7ef468bad7f8435f)
+        ;
+
+        
+    
+    
+            circle_marker_7174feed71e17b6387846c6107418274.bindTooltip(
+                `<div>
+                     인천광역시 연수구청
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_867eee59b682e197271b7cb1580f0f41 = L.circleMarker(
+                [37.7600428240412, 126.779875804983],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_b3ea146d00ae1a0515a3ebb6d7d76659);
+        
+    
+        var popup_825899a46f61b9d146ec45bde9034197 = L.popup({"maxWidth": 200});
+
+        
+            var html_541f4e989fb019bf47b5eee02adf2cb1 = $(`<div id="html_541f4e989fb019bf47b5eee02adf2cb1" style="width: 100.0%; height: 100.0%;">경기도 파주시 시청로 50(아동동)</div>`)[0];
+            popup_825899a46f61b9d146ec45bde9034197.setContent(html_541f4e989fb019bf47b5eee02adf2cb1);
+        
+
+        circle_marker_867eee59b682e197271b7cb1580f0f41.bindPopup(popup_825899a46f61b9d146ec45bde9034197)
+        ;
+
+        
+    
+    
+            circle_marker_867eee59b682e197271b7cb1580f0f41.bindTooltip(
+                `<div>
+                     파주시청
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_663bfef75c08ed890491fdd17b8d579a = L.circleMarker(
+                [37.4909006634229, 127.03844196114],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_b3ea146d00ae1a0515a3ebb6d7d76659);
+        
+    
+        var popup_9864fb06355816a49cb40445a2908a96 = L.popup({"maxWidth": 200});
+
+        
+            var html_dc36a464b046c177e8f41128f2403a4d = $(`<div id="html_dc36a464b046c177e8f41128f2403a4d" style="width: 100.0%; height: 100.0%;">서울특별시 강남구 도곡로18길 7(도곡동)</div>`)[0];
+            popup_9864fb06355816a49cb40445a2908a96.setContent(html_dc36a464b046c177e8f41128f2403a4d);
+        
+
+        circle_marker_663bfef75c08ed890491fdd17b8d579a.bindPopup(popup_9864fb06355816a49cb40445a2908a96)
+        ;
+
+        
+    
+    
+            circle_marker_663bfef75c08ed890491fdd17b8d579a.bindTooltip(
+                `<div>
+                     강남구청
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
