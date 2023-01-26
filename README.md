@@ -6,7 +6,7 @@ This repository contains coding practices using **Python**, **Power BI**, **HTML
 * *web crawling*
 ## Power BI
 * *power_bi*
-## Web(HTML, Javascrip, CSS)
+## Web(HTML, Javascript, CSS)
 * *web crawling*
 ## R
 * *R*
