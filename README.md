@@ -10,3 +10,4 @@ This repository contains coding practices using **Python**, **Power BI**, **HTML
 * [*web crawling*](https://github.com/sangchun1/coding_practice/tree/master/web%20crawling)
 ## R
 * [*R*](https://github.com/sangchun1/coding_practice/tree/master/R)
+* [*r_shiny*](https://github.com/sangchun1/coding_practice/tree/master/r_shiny)
