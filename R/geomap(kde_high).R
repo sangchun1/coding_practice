@@ -4,7 +4,7 @@ setwd("C:/workspace/R")
 # 1-1 지역별 평균 가격 구하기
 load("./06_geodataframe/06_apt_price.rdata") # 실거래 자료 불러오기
 library(sf)
-grid <- st_read("./06_geodataframe/seoul.shp") # 서울시 1km 그리드 불러오기
+grid <- st_read("./01_code/sigun_grid/seoul.shp") # 서울시 1km 그리드 불러오기
 apt_price <- st_join(apt_price, grid, join = st_intersects) # 실거래+그리드 결합
 head(apt_price, 2)
 

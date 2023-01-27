@@ -1,5 +1,5 @@
 # 수집 대상 지역 설정
-loc <- read.csv("sigun_code.csv", fileEncoding = "UTF-8") # 지역 코드
+loc <- read.csv("./01_code/sigun_code/sigun_code.csv", fileEncoding = "UTF-8") # 지역 코드
 loc$code <- as.character(loc$code) # 행정구역명 문자 변환
 head(loc, 2) # 확인
 
@@ -11,7 +11,7 @@ datelist <- format(datelist, format = '%Y%m') # 형식 변환(YYYY-MM-DD => YYYY
 datelist[1:3] # 확인
 
 # 인증키 입력
-service_key <- "#---#"
+service_key <- "PJj7lURnarbUblWAvGh1k5V8p9fn2N%2BggsWXii1As7C3TbXqHmZqKK9vN5BPl2tbp5e6xtOjf6pEK4quwNH%2FLw%3D%3D"
 
 # 요청 목록 만들기
 url_list <- list() # 빈 리스트 만들기
