@@ -24,6 +24,7 @@ This repository contains coding practices using **Python**, **Power BI**, **HTML
   <img src="https://img.shields.io/badge/CSS-239120?style=flat-square&logo=css3&logoColor=white"/>
 </h2>
 
+* [web](https://github.com/sangchun1/coding_practice/tree/master/web)
 * [web crawling](https://github.com/sangchun1/coding_practice/tree/master/web%20crawling)
 
 <h2>
