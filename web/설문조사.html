@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회사 설문조사</title>
+  </head>
+  <body>
+    <h1>nufyn 회사 설문조사</h1>
+    <form action="">
+      <p>
+        <label for="name">이름: </label>
+        <input
+          type="text"
+          id="text"
+          required
+          placeholder="이름을 반드시 입력해주세요"
+        />
+      </p>
+      <p>
+        <label for="addr">주소: </label>
+        <input type="text" id="addr" value="대구 달서구..." />
+      </p>
+      <p>
+        <label for="company">회사: </label>
+        <input type="text" id="company" value="nufyn 회사" disabled/>
+      </p>
+      <p>
+        <label for="sex">성별: </label>
+        <label><input type="radio" name="sex" value="male" />남자</label>
+        <label><input type="radio" name="sex" value="female" />여자</label>
+      </p>
+      <p>
+        <label for="phone">전화번호 앞자리: </label>
+        <label><input type="radio" name="phone" value="other" />기타</label>
+        <label><input type="radio" name="phone" value="010" />010</label>
+      </p>
+      <p>
+        <label for="pet">좋아하는 애완 동물은? </label>
+        <label><input type="checkbox" name="pet" value="dog" />개</label>
+        <label><input type="checkbox" name="pet" value="cat" />고양이</label>
+        <label><input type="checkbox" name="pet" value="snake" />뱀</label>
+        <label><input type="checkbox" name="pet" value="ant" />개미</label>
+      </p>
+      <p>
+        <label for="user-id">ID: </label>
+        <input type="text" id="user-id" required placeholder="아이디" />
+      </p>
+      <p>
+        <label for="pw">PW: </label>
+        <input type="password" id="user-pw" required placeholder="패스워드" />
+      </p>
+      <p>
+        <select multiple>
+          <option value="010">010</option>
+          <option value="016">016</option>
+          <option value="017">017</option>
+        </select>
+      </p>
+      <p>
+        <textarea
+          name="memo"
+          id=""
+          cols="40"
+          rows="15"
+          placeholder="Memo"
+        ></textarea>
+      </p>
+      <p>
+        <input type="submit" id="send" value="보내기" />
+      </p>
+    </form>
+  </body>
+</html>

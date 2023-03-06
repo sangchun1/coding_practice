@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>입력방식</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>입력방식</h3>
+    <hr />
+    <form>
+      <table>
+        <tr>
+          <td>텍스트</td>
+          <td>
+            <label for="user-text"
+              ><input type="text" name="user-text"
+            /></label>
+          </td>
+        </tr>
+        <tr>
+          <td>패스워드</td>
+          <td>
+            <label for="user-pw"
+              ><input type="password" name="user-pw"
+            /></label>
+          </td>
+        </tr>
+        <tr>
+          <td>히든</td>
+          <td>
+            <label for="hidden"
+              ><input type="hidden" value="primary key" name="hidden"
+            /></label>
+          </td>
+        </tr>
+        <tr>
+          <td>체크박스</td>
+          <td>
+            <label><input type="checkbox" value="apple" />사과</label
+            ><label><input type="checkbox" value="grape" />포도</label
+            ><label><input type="checkbox" value="cham" />참외</label
+            ><label><input type="checkbox" value="watermelon" />수박</label>
+          </td>
+        </tr>
+        <tr>
+          <td>셀렉트</td>
+          <td>
+            <select>
+              <option value="kimbap" selected>김밥</option>
+              <option value="tteok">떡볶이</option>
+              <option value="sun">순대</option>
+              <option value="eo">어묵</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>셀렉트 필터</td>
+          <td>
+            <select multiple>
+              <option value="kimbap" selected>김밥</option>
+              <option value="tteok">떡볶이</option>
+              <option value="sun">순대</option>
+              <option value="eo">어묵</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>라디오</td>
+          <td>
+            <label><input type="radio" name="sex" value="male" />남자</label>
+            <label><input type="radio" name="sex" value="female" />여자</label>
+          </td>
+        </tr>
+        <tr>
+          <td>Textarea</td>
+          <td>
+            <textarea name="textarea" cols="40" rows="8"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>파일</td>
+          <td>
+            <label
+              ><input type="button" value="파일 선택" /> 선택된 파일 없음</label
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>버튼</td>
+          <td>
+            <label for="button"
+              ><input type="button" name="button" value="버튼"
+            /></label>
+            <label for="submit"
+              ><input type="submit" name="submit" value="제출"
+            /></label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: center">
+            <div>
+              <label for="submit"
+                ><input type="submit" name="submit" value="제출"
+              /></label>
+              <label for="cancel"
+                ><input type="reset" name="cancel" value="입력값 취소"
+              /></label>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

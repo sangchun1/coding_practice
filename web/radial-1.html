@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>원형 그라데이션</title>
+    <style>
+      div {
+        width: 500px;
+        height: 300px;
+        margin: 10px;
+        border: 1px solid #222;
+      }
+
+      /* 타원형 원형 그라데이션 */
+      .grad1 {
+        background: radial-gradient(white, yellow, red);
+      }
+      /* 원형 그라데이션 */
+      .grad2 {
+        background: radial-gradient(circle at 20% 20%, white, yellow, red);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grad1"></div>
+    <div class="grad2"></div>
+  </body>
+</html>

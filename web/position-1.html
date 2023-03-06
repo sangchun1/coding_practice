@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS position 속성</title>
+    <style>
+      p {
+        width: 500px;
+        height: 200px;
+        background-color: #eee;
+        border: 1px solid #ccc;
+        line-height: 2;
+      }
+      #static {
+        position: static;
+      }
+      #relative-1 {
+        position: relative;
+      }
+      #relative-2 {
+        position: relative; /* 포지셔닝 - relative */
+        left: 100px;    /* 왼쪽에서 100px 떨어지게 */
+        top: -50px; /* 위쪽에서 -50px 떨어지게 (위로 이동) */
+      }
+      #fixed {
+        width: 100px;
+        height: 100px;
+        background-color: #222;
+        position: fixed;    /* 포지셔닝 - fixed */ 
+        right: 30px;    /* 오른쪽에서 30px 떨어지게 */
+        top: 30px;  /* 위쪽에서 30px 떨어지게 */
+      }
+    </style>
+  </head>
+  <body>
+    <p id="static">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Dictum at tempor
+      commodo ullamcorper a. Hac habitasse platea dictumst quisque sagittis
+      purus sit amet volutpat.
+    </p>
+    <p id="relative-1">
+      Aliquam eleifend mi in nulla. Sit amet cursus sit amet. Et netus et
+      malesuada fames. Nulla malesuada pellentesque elit eget gravida cum
+      sociis. Nec nam aliquam sem et tortor consequat id porta. In egestas erat
+      imperdiet sed euismod nisi porta. Venenatis urna cursus eget nunc
+      scelerisque viverra mauris in.
+    </p>
+    <p id="relative-2">
+      Nunc scelerisque viverra mauris in aliquam sem fringilla. Blandit massa
+      enim nec dui. Tristique nulla aliquet enim tortor at auctor urna nunc id.
+      Diam phasellus vestibulum lorem sed. Ornare suspendisse sed nisi lacus sed
+      viverra tellus in hac. Elit pellentesque habitant morbi tristique senectus
+      et.
+    </p>
+    <p id="fixed"></p>
+  </body>
+</html>

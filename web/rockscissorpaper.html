@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>가위바위보</title>
+  <script>
+    // 유저 인풋
+    var userInput = prompt("가위바위보!");
+
+    // 컴퓨터 인풋
+    let x = Math.floor(Math.random() * 3 + 1); // 1=가위, 2=바위, 3=보
+    var compInput;
+    if (x == 1) {
+      compInput = "가위";
+    } else {
+      if (x == 2) {
+        compInput = "바위";
+      } else {
+        if (x == 3) {
+          compInput = "보";
+        }
+      }
+    }
+
+    if ((userInput == "가위") | (userInput == "바위") | (userInput == "보")) {
+      // 가위
+      if (userInput == "가위") {
+        if (compInput == "가위") {
+          alert("컴퓨터는 " + compInput + "를 냈으므로 비겼습니다...");
+          document.write("다시 도전하세요...(F5)");
+        } else {
+          if (compInput == "바위") {
+            alert("컴퓨터는 " + compInput + "를 냈으므로 졌습니다ㅠㅠ");
+            document.write("다시 도전하세요ㅠㅠ(F5)");
+          } else {
+            if (compInput == "보") {
+              alert("컴퓨터는 " + compInput + "를 냈으므로 이겼습니다!");
+              document.write("축하합니다!");
+            }
+          }
+        }
+      }
+
+      // 바위
+      if (userInput == "바위") {
+        if (compInput == "가위") {
+          alert("컴퓨터는 " + compInput + "를 냈으므로 이겼습니다!");
+          document.write("축하합니다!");
+        } else {
+          if (compInput == "바위") {
+            alert("컴퓨터는 " + compInput + "를 냈으므로 비겼습니다...");
+            document.write("다시 도전하세요...(F5)");
+          } else {
+            if (compInput == "보") {
+              alert("컴퓨터는 " + compInput + "를 냈으므로 졌습니다ㅠㅠ");
+              document.write("다시 도전하세요ㅠㅠ(F5)");
+            }
+          }
+        }
+      }
+
+      // 보
+      if (userInput == "보") {
+        if (compInput == "가위") {
+          alert("컴퓨터는 " + compInput + "를 냈으므로 졌습니다ㅠㅠ");
+          document.write("다시 도전하세요ㅠㅠ(F5)");
+        } else {
+          if (compInput == "바위") {
+            alert("컴퓨터는 " + compInput + "를 냈으므로 이겼습니다!");
+            document.write("축하합니다!");
+          } else {
+            if (compInput == "보") {
+              alert("컴퓨터는 " + compInput + "를 냈으므로 비겼습니다...");
+              document.write("다시 도전하세요...(F5)");
+            }
+          }
+        }
+      }
+    } else alert("잘못 입력하셨습니다."); // 오타
+  </script>
+</head>
+
+<body></body>
+
+</html>

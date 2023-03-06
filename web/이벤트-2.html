@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 이벤트</title>
+    <link rel="stylesheet" href="css/function.css">
+</head>
+
+<body>
+    <button id="change">글자색 바꾸기</button>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vestibulum finibus quam. Cras non porttitor
+        mi, ut gravida sapien. Praesent ultricies nec mauris quis condimentum. Nullam molestie purus sapien, sit amet
+        viverra sem finibus id. Ut eu mauris ante. Maecenas tempor odio erat, et volutpat lectus consectetur vitae.
+        Maecenas tincidunt dolor id est fermentum, dignissim vehicula ligula pulvinar. Ut quis interdum sapien. Duis non
+        massa et turpis rhoncus semper. Praesent condimentum id dui eget faucibus. Nunc scelerisque at erat eget
+        consectetur. Donec risus urna, tincidunt ut efficitur nec, suscipit a felis. In hac habitasse platea dictumst.
+        In erat erat, ornare ut cursus vel, aliquam id arcu. Curabitur aliquet metus et mi vulputate, ullamcorper
+        consectetur velit congue. Donec fringilla justo sed mi aliquet feugiat. Aliquam aliquet est ex, vel ultricies
+        eros molestie nec. Mauris fringilla accumsan mauris vel facilisis. Maecenas sed sapien orci. Nunc posuere
+        viverra leo, at aliquet justo posuere scelerisque. Cras tincidunt ut lacus a pharetra. Nulla laoreet dolor nec
+        magna faucibus, vitae tincidunt nisi ultricies.</p>
+
+    <script>
+        // 방법 1 : 웹 요소를 변수로 지정 & 미리 만든 함수 사용
+        // var changeBttn = document.querySelector('#change');
+        // changeBttn.onclick = changeColor;
+
+        // function changeColor() {
+        //     document.querySelector('p').style.color = "#f00";
+        // }
+
+        // 방법 2 : 웹 요소를 따로 변수로 만들지 않고 사용
+        // document.querySelector('#change').onclick = changeColor;
+
+        // function changeColor() {
+        //     document.querySelector('p').style.color = "#f00";
+        // }
+
+        // 방법 3 : 직접 함수를 선언
+        // document.querySelector('#change').onclick = function () {
+        //     document.querySelector('p').style.color = "#f00";
+        // };
+
+    </script>
+</body>
+
+</html>

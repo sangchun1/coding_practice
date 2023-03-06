@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체 생성</title>
+</head>
+
+<body style="margin-top: 40px; margin-left: 40px">
+    <div id="container">
+        <h3><a href="#" onclick="addName(); return false;">당신의 이름은 무엇입니까?</a></h3>
+        <hr>
+    </div>
+
+    <script>
+        function addName() {
+            const h3 = document.createElement('h3');
+            h3.classList.add('class명1', 'class명2');
+            const textNode = document.createTextNode('홍길동');
+            h3.appendChild(textNode);
+            document.body.appendChild(h3);
+
+            var names = document.querySelectorAll('h3')
+            for (let i = 0; i < names.length; i++) {
+                names[i].addEventListener("click", function () {
+                    if (this.parentNode) {
+                        this.parentNode.removeChild(this);
+                    }
+                });
+            }
+        }
+    </script>
+</body>
+
+</html>
